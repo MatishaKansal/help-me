@@ -33,8 +33,8 @@ class Food{
             this.phone.hide();
             this.greeting.hide();
             this.title.hide();
-            order = new ();
-            order.display();
+            // order = new ();
+            // order.display();
         });
     }
 }

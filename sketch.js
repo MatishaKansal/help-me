@@ -4,7 +4,7 @@ var order, game;
 var gameState = 0, playerCount;
 
 function preload(){
-  bg = loadImage("bg.jpg")
+  bg = loadImage("images/bg.jpg")
 }
 
 function setup() {
