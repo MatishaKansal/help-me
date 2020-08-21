@@ -27,13 +27,20 @@ class Delivery{
         this.address.position(300, 300);
         this.phone.position(300, 350);
         this.button.position(350, 400);
-        // this.button.mousePressed(()=>{
-        //     this.input.hide();
-        //     this.button.hide();
-        //     this.address.hide();
-        //     this.phone.hide();
-        //     this.greeting.hide();
-        //     this.title.hide();
-        // });
+        this.button.mousePressed(()=>{
+            this.input.hide();
+            this.button.hide();
+            this.address.hide();
+            this.phone.hide();
+            this.greeting.hide();
+            this.title.hide();
+            finish = new Finish();
+            finish.display();
+            finish1.getItemInfo(databaseitem);
+            finish2.getNumInfo(databasenum);
+            finish3.getPlaceInfo(databaseplace);
+            finish4.getTimeInfo(databasetime); 
+        });
+        
     }
 }
