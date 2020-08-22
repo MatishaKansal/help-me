@@ -20,25 +20,25 @@ hide(){
 }
 display(){
     this.done.html("COMPLETED!!!");
-    this.done.position(300, 500);
+    this.done.position(displayHeight/2 + 100, displayWidth/6 + 200);
     }
 getItemInfo(item){
     this.item.html("Item :- " + item);
-    this.item.position(200, 200);
+    this.item.position(displayHeight/2 - 50, displayWidth/6);
 }
 
 getNumInfo(num){
     this.num.html("Item Number :- " + num);
-    this.num.position(200, 250);
+    this.num.position(displayHeight/2 - 50, displayWidth/6 + 40);
 }
 
 getPlaceInfo(place){
     this.place.html("Destination :- " + place);
-    this.place.position(200, 300);
+    this.place.position(displayHeight/2 - 50, displayWidth/6 + 80);
 }
 
 getTimeInfo(time){
     this.time.html("Time :- " + time);
-    this.time.position(200, 350);
+    this.time.position(displayHeight/2 - 50, displayWidth/6 + 120);
 }
 }

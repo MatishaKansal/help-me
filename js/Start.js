@@ -38,16 +38,16 @@ class Start{
     display(){
         this.greeting.style.color = "purple";
         this.greeting.html("HELP ME!");
-        this.greeting.position(380, 30);
-        this.food.position(200, 200);
-        this.ngo.position(400, 400);
-        this.delivery.position(600, 200);
+        this.greeting.position(displayHeight/2+100, displayWidth/6 - 150);
+        this.food.position(displayHeight/2- 50, displayWidth/6 - 30);
+        this.ngo.position(displayHeight/2+ 130, displayWidth/6 + 180);
+        this.delivery.position(displayHeight/2+ 310, displayWidth/6 - 30);
         this.food.mousePressed(()=>{
             this.food.hide();
             this.ngo.hide();
             this.delivery.hide();
-            form3 = new Food();
-            form3.display();
+            foodform = new Food();
+            foodform.display();
         });
         this.ngo.mousePressed(()=>{
             this.food.hide();

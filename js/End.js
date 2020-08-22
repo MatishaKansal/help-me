@@ -5,7 +5,7 @@ class End{
         this.place = createElement('h2');
         this.time = createElement('h2');
         this.done = createElement('h1');
-        this.done.style('fontSize', 'xx-large');
+    this.done.style('fontSize', 'xx-large');
         this.done.style('fontWeight', '900');
         this.done.style('color', 'maroon');
     }
@@ -19,25 +19,25 @@ class End{
     }
     display(){
         this.done.html("COMPLETED!!!");
-        this.done.position(300, 500);
+        this.done.position(displayHeight/2 + 100, displayWidth/6 + 200);
         }
-    getItemInfo(item){
-        this.item.html("Item :- " + item);
-        this.item.position(200, 200);
+    getItemInfo(){
+        this.item.html("Item :- Rotis");
+        this.item.position(displayHeight/2 - 50, displayWidth/6);
     }
     
-    getNumInfo(num){
-        this.num.html("Item Number :- " + num);
-        this.num.position(200, 250);
+    getNumInfo(){
+        this.num.html("Item Number :- 10");
+        this.num.position(displayHeight/2 - 50, displayWidth/6 + 40);
     }
     
-    getPlaceInfo(place){
-        this.place.html("Destination :- " + place);
-        this.place.position(200, 300);
+    getPlaceInfo(){
+        this.place.html("Destination :- Manipur");
+        this.place.position(displayHeight/2 - 50, displayWidth/6 + 80);
     }
     
-    getTimeInfo(time){
-        this.time.html("Time :- " + time);
-        this.time.position(200, 350);
+    getTimeInfo(){
+        this.time.html("Time :- 2pm");
+        this.time.position(displayHeight/2 - 50, displayWidth/6 + 120);
     }
     }

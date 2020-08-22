@@ -1,4 +1,4 @@
-var map, car, form1, start;
+var map, car, form1, foodform, form2, start;
 var database, bg;
 var order, finish, end, item, databaseitem, databasenum, databaseplace, databasetime;
 var game1, game2, game3, game4, game5;
@@ -19,6 +19,8 @@ function setup() {
   game4 = new Game();
   game5 = new Game();
   item = new Game();
+  // form2 = new Delivery();
+  // form3 = new Food();
   function0 = new Function();
   function1 = new Function();
   function2 = new Function();

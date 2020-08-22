@@ -20,13 +20,13 @@ class Form{
 
     display(){
         this.title.html("Welcome to HELP ME !!");
-        this.title.position(200, 100);
+        this.title.position(displayHeight/2 + 100, displayWidth/6 - 80);
         this.greeting.html("Thank you for helping us");
-        this.greeting.position(400, 150);
-        this.input.position(300, 250);
-        this.address.position(300, 300);
-        this.phone.position(300, 350);
-        this.button.position(350, 400);
+        this.greeting.position(displayHeight/2 + 50, displayWidth/6 - 40);
+        this.input.position(displayHeight/2 + 50, displayWidth/6 + 40);
+        this.address.position(displayHeight/2 + 50, displayWidth/6 + 80);
+        this.phone.position(displayHeight/2 + 50, displayWidth/6 + 120);
+        this.button.position(displayHeight/2 + 100, displayWidth/6 + 170);
         this.button.mousePressed(()=>{
             this.input.hide();
             this.button.hide();

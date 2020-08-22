@@ -29,14 +29,14 @@ class Order{
 
     display(){
         this.order.html("ORDER FOR ");
-        this.order.position(300, 100);
-        this.item.position(450, 120);
+        this.order.position(displayHeight/2, displayWidth/6);
+        this.item.position(displayHeight/2 + 150, displayWidth/6 +20);
         this.timmings.html("TIMMINGS:-")
-        this.timmings.position(100, 200);
-        this.time.position(100, 300);
-        this.place.position(100, 350);
-        this.number.position(100, 400);
-        this.submit.position(400, 500);
+        this.timmings.position(displayHeight/6 + 90, displayWidth/6 + 70);
+        this.time.position(displayHeight/6 + 90, displayWidth/6 + 120);
+        this.place.position(displayHeight/6 + 90, displayWidth/6 + 160);
+        this.number.position(displayHeight/6 + 90, displayWidth/6 + 200);
+        this.submit.position(displayHeight/2 +20, displayWidth/6 + 250);
         this.submit.mousePressed(()=>{
             var item = this.item.value();
             game1.update(item);
